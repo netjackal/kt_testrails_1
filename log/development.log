@@ -1,0 +1,246 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-04-21 18:46:19) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 74ms (View: 22, DB: 0) | 200 OK [http://localhost/railstest/rails/info/properties]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100421104721)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" varchar(255), "byline" varchar(255), "rel_date" datetime, "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100421104721')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 18:47:32) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 300ms (View: 295, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 18:48:51) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 18:48:55) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 18:49:25) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 56ms (View: 52, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 18:52:55) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 18:53:12) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 19:29:37) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 19:29:47) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 19:30:18) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 19:33:16) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/railstest/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-04-21 19:33:38) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+
+ActionView::TemplateError (undefined method `author' for #<Article:0x1010f41d0>) on line #20 of app/views/articles/new.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :author %><br />
+20:     <%= f.text_field :author %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :body %><br />
+
+    app/views/articles/new.html.erb:20
+    app/views/articles/new.html.erb:3
+    app/controllers/articles_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (86.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100421104721)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-04-21 19:34:15) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+
+ActionView::TemplateError (undefined method `author' for #<Article:0x1023195e0>) on line #20 of app/views/articles/new.html.erb:
+17:   </p>
+18:   <p>
+19:     <%= f.label :author %><br />
+20:     <%= f.text_field :author %>
+21:   </p>
+22:   <p>
+23:     <%= f.label :body %><br />
+
+    app/views/articles/new.html.erb:20
+    app/views/articles/new.html.erb:3
+    app/controllers/articles_controller.rb:29:in `new'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20100421104721)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" varchar(255), "byline" varchar(255), "rel_date" datetime, "author" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100421104721')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2010-04-21 19:34:22) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/railstest/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2010-04-21 19:42:23) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 88ms (View: 82, DB: 1) | 200 OK [http://localhost/railstest/articles]
