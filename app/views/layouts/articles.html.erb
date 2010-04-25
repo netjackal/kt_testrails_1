@@ -5,13 +5,23 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Articles: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'scaffold' %><%= stylesheet_link_tag 'railstest' %>
 </head>
-<body>
+<body id='movie'>
 
-<p style="color: green"><%= flash[:notice] %></p>
 
-<%= yield %>
-
+<div id="banner">
+	<%= image_tag('rails.png') %>
+	<%= @page_title || 'Railstest'  %>
+</div>
+<div id='columns'>
+	<div id='side'>
+		<h1>Sidebar</h1>
+		<ul>
+			<li><%= link_to "List Articles", articles_path %></li>
+		</ul>
+	</div>
+	<div id='main'><%= yield %></div>
+</div>
 </body>
 </html>

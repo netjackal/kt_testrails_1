@@ -1,6 +1,6 @@
-<h1>Listing articles</h1>
+<div id='article-list'><h1>Listing articles</h1>
 
-<table>
+<table cellpadding="5" cellspacing="0">
   <tr>
     <th>Headline</th>
     <th>Byline</th>
@@ -10,18 +10,20 @@
   </tr>
 
 <% @articles.each do |article| %>
-  <tr>
-    <td><%=h article.headline %></td>
+<tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%= link_to article.headline, article %></td>
     <td><%=h article.byline %></td>
     <td><%=h article.rel_date %></td>
     <td><%=h article.author %></td>
-    <td><%=h article.body %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class="list-line-body"><%=h article.body %></td>
+  <td class="list-actions">
+    <%= link_to 'Show', article %><br/>
+    <%= link_to 'Edit', edit_article_path(article) %></br>
+    <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
+   </td>
   </tr>
 <% end %>
-</table>
+</table></div>
 
 <br />
 
