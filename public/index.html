@@ -62,7 +62,7 @@
 
 
       #header {
-        background-image: url("images/rails.png");
+        background-image: url("railstest/images/rails.png");
         background-repeat: no-repeat;
         background-position: top left;
         height: 64px;
@@ -178,12 +178,12 @@
       }
       
     </style>
-    <script type="text/javascript" src="javascripts/prototype.js"></script>
-    <script type="text/javascript" src="javascripts/effects.js"></script>
+    <script type="text/javascript" src="railstest/javascripts/prototype.js"></script>
+    <script type="text/javascript" src="railstest/javascripts/effects.js"></script>
     <script type="text/javascript">
       function about() {
         if (Element.empty('about-content')) {
-          new Ajax.Updater('about-content', 'rails/info/properties', {
+          new Ajax.Updater('about-content', 'railstest/rails/info/properties', {
             method:     'get',
             onFailure:  function() {Element.classNames('about-content').add('failure')},
             onComplete: function() {new Effect.BlindDown('about-content', {duration: 0.25})}

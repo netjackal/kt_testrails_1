@@ -1,12 +1,14 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+
   def index
     @articles = Article.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
+      # format.json { render :json => @articles }
     end
   end
 
